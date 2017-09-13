@@ -212,7 +212,11 @@ PlayerSettings:
   iOSURLSchemes: []
   iOSBackgroundModes: 0
   iOSMetalForceHardShadows: 0
+<<<<<<< HEAD
   metalEditorSupport: 0
+=======
+  metalEditorSupport: 1
+>>>>>>> 650679d6a1340902a7028b82f411e5c459fca2ba
   metalAPIValidation: 1
   iOSRenderExtraFrameOnPause: 1
   appleDeveloperTeamID: 

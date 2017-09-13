@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
 	public bool showSplashScreen = true;
 	public float splashScreenTime = 3f;
 
-	void start()
+	void Start()
 	{
 		if(firstStart && showSplashScreen)
 		{
