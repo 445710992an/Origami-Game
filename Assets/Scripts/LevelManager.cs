@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
 	private static bool firstStart = true;
 	public GameObject SplashScreen;
 	public GameObject GameSapce;
+	public GameObject setting;
 
 	public Button btnSoundOn;
 	public Button btnSoundOff;
@@ -57,7 +58,8 @@ public class LevelManager : MonoBehaviour
 	{
 		SoundManager.Instance.PlayMusic(SoundManager.Instance.background);
 		yield return new WaitForSeconds(delay);
-		SplashScreen.SetActive(false);
+		//SplashScreen.SetActive(false);
+		setting.SetActive(true);
 		GameSapce.SetActive (true);
 
 		/*

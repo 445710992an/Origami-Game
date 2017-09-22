@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LevelBUttonScrollRect : MonoBehaviour,IBeginDragHandler,IEndDragHandler {
 
@@ -19,6 +20,13 @@ public class LevelBUttonScrollRect : MonoBehaviour,IBeginDragHandler,IEndDragHan
 	void Start () 
 	{
 		scrollRect = GetComponent<ScrollRect>();
+
+		GameObject btnObj = GameObject.Find ("Button");
+		Button btn = btnObj.GetComponent<Button>();
+		btn.onClick.AddListener (delegate() {
+			this.GoNextScene(btnObj);
+		});
+
 	}
 	
 	// Update is called once per frame
@@ -93,6 +101,14 @@ public class LevelBUttonScrollRect : MonoBehaviour,IBeginDragHandler,IEndDragHan
 		{
 			targetHorizontalPosition = pageArray [3];
 		}
+	}
+
+	public void GoNextScene(GameObject Nscene)
+	{
+		int i = SceneManager.GetActiveScene().buildIndex;
+
+		SceneManager.LoadScene (i + 1);
+		Debug.Log ("in");
 	}
 
 }

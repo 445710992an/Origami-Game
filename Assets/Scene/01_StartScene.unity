@@ -2193,6 +2193,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayButtonSound
       objectReference: {fileID: 0}
+    - target: {fileID: 1370266002000226, guid: 3b4947cfb8ef3498ebfb9e2155c7e162, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b4947cfb8ef3498ebfb9e2155c7e162, type: 2}
   m_IsPrefabParent: 0
@@ -3735,6 +3739,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1110199292}
   m_Mesh: {fileID: 4300012, guid: 4735160b42a3154428094dff59ef0f4e, type: 3}
+--- !u!1 &1124763708 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1370266002000226, guid: 3b4947cfb8ef3498ebfb9e2155c7e162,
+    type: 2}
+  m_PrefabInternal: {fileID: 695126148}
 --- !u!1 &1132990828
 GameObject:
   m_ObjectHideFlags: 0
@@ -4295,6 +4304,11 @@ Prefab:
       propertyPath: menuUI
       value: 
       objectReference: {fileID: 223177380}
+    - target: {fileID: 114991229850726648, guid: 9c317e96697a548139f6b99191975a75,
+        type: 2}
+      propertyPath: setting
+      value: 
+      objectReference: {fileID: 1124763708}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c317e96697a548139f6b99191975a75, type: 2}
   m_IsPrefabParent: 0
