@@ -746,7 +746,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is the default text in the Unity
+  m_Text: This goes the background story
 --- !u!222 &1684367046
 CanvasRenderer:
   m_ObjectHideFlags: 0
