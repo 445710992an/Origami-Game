@@ -1,0 +1,8 @@
+Test of Store!
+one!
+two!
+three!
+four!
+five!
+six!
+seven!
