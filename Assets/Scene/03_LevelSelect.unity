@@ -760,7 +760,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 120590416}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 169050e060a134b6ba59e39dfc036a2e, type: 3}
   m_Name: 
@@ -3560,7 +3560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4179,6 +4179,15 @@ Prefab:
     - target: {fileID: 1293343807820134, guid: 762538eb7088541878b241368c00c2a0, type: 2}
       propertyPath: m_Name
       value: Buton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293343807820134, guid: 762538eb7088541878b241368c00c2a0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224224732276905684, guid: 762538eb7088541878b241368c00c2a0,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 762538eb7088541878b241368c00c2a0, type: 2}
