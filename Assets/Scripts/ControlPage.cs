@@ -22,10 +22,10 @@ public class ControlPage : MonoBehaviour {
 
 	public GameObject ori;
 
-	bool boolLT = false;
-	bool boolRT = false;
-	bool boolRB = false;
-	bool boolLB = false;
+
+	int change = 0;
+	int a = 0;
+	int b = 0;
 
 	void Start ()
 	{
@@ -38,157 +38,270 @@ public class ControlPage : MonoBehaviour {
 		LBtoRT.gameObject.SetActive (false);
 		LTtoRB.gameObject.SetActive (false);
 		RBtoLT.gameObject.SetActive (false);
+
 	}
 
 	void Update()
 	{
-		if((boolRB == true && boolRT == true))
-		{
-			RTtoRB.gameObject.SetActive (true);
-			RTtoLB.gameObject.SetActive (false);
-			RTtoLT.gameObject.SetActive (false);
-			LBtoLT.gameObject.SetActive (false);
-			LBtoRB.gameObject.SetActive (false);
-			LBtoRT.gameObject.SetActive (false);
-			LTtoRB.gameObject.SetActive (false);
-			RBtoLT.gameObject.SetActive (false);
+		//Debug.Log (first);
+		if (change > 0) {
 
-			ori.gameObject.SetActive (false);
+			int num = a * 10 + b;
 
-			boolRB = false;
-			boolRT = false;
+			switch (num) {
+			case 12:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (true);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 13:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (true);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 14:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (true);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 21:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (true);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 23:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (true);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 24:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (true);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 31:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (true);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 32:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (true);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 34:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (true);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 41:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (true);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 42:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (false);
+				LBtoLT.gameObject.SetActive (true);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			case 43:
+				ori.gameObject.SetActive (false);
+				RTtoRB.gameObject.SetActive (false);
+				RTtoLB.gameObject.SetActive (false);
+				RTtoLT.gameObject.SetActive (true);
+				LBtoLT.gameObject.SetActive (false);
+				LBtoRB.gameObject.SetActive (false);
+				LBtoRT.gameObject.SetActive (false);
+				LTtoRB.gameObject.SetActive (false);
+				RBtoLT.gameObject.SetActive (false);
+
+				change = 0;
+				a = 0;
+				b = 0;
+				break;
+
+			default:
+				break;
+			}
 		}
-
-		if(boolRT == true && boolLB == true)
-		{
-			RTtoRB.gameObject.SetActive (false);
-			RTtoLB.gameObject.SetActive (true);
-			RTtoLT.gameObject.SetActive (false);
-			LBtoLT.gameObject.SetActive (false);
-			LBtoRB.gameObject.SetActive (false);
-			LBtoRT.gameObject.SetActive (false);
-			LTtoRB.gameObject.SetActive (false);
-			RBtoLT.gameObject.SetActive (false);
-
-			ori.gameObject.SetActive (false);
-
-			boolRT = false;
-			boolLB = false;
-		}
-
-		if(boolLT == true && boolRT == true)
-		{
-			RTtoRB.gameObject.SetActive (false);
-			RTtoLB.gameObject.SetActive (false);
-			RTtoLT.gameObject.SetActive (true);
-			LBtoLT.gameObject.SetActive (false);
-			LBtoRB.gameObject.SetActive (false);
-			LBtoRT.gameObject.SetActive (false);
-			LTtoRB.gameObject.SetActive (false);
-			RBtoLT.gameObject.SetActive (false);
-
-			ori.gameObject.SetActive (false);
-
-			boolLT = false;
-			boolRT = false;
-		}
-
-		if(boolLB == true && boolLT == true)
-		{
-			RTtoRB.gameObject.SetActive (false);
-			RTtoLB.gameObject.SetActive (false);
-			RTtoLT.gameObject.SetActive (false);
-			LBtoLT.gameObject.SetActive (true);
-			LBtoRB.gameObject.SetActive (false);
-			LBtoRT.gameObject.SetActive (false);
-			LTtoRB.gameObject.SetActive (false);
-			RBtoLT.gameObject.SetActive (false);
-
-			ori.gameObject.SetActive (false);
-
-			boolLB = false;
-			boolLT = false;
-		}
-
-		if(boolLB == true && boolRB == true)
-		{
-			RTtoRB.gameObject.SetActive (false);
-			RTtoLB.gameObject.SetActive (false);
-			RTtoLT.gameObject.SetActive (false);
-			LBtoLT.gameObject.SetActive (false);
-			LBtoRB.gameObject.SetActive (true);
-			LBtoRT.gameObject.SetActive (false);
-			LTtoRB.gameObject.SetActive (false);
-			RBtoLT.gameObject.SetActive (false);
-
-			ori.gameObject.SetActive (false);
-
-			boolLB = false;
-			boolRB = false;
-		}
-
-		if(boolLB == true && boolRT == true)
-		{
-			RTtoRB.gameObject.SetActive (false);
-			RTtoLB.gameObject.SetActive (false);
-			RTtoLT.gameObject.SetActive (false);
-			LBtoLT.gameObject.SetActive (false);
-			LBtoRB.gameObject.SetActive (false);
-			LBtoRT.gameObject.SetActive (true);
-			LTtoRB.gameObject.SetActive (false);
-			RBtoLT.gameObject.SetActive (false);
-
-			ori.gameObject.SetActive (false);
-
-			boolLB = false;
-			boolRT = false;
-		}
-
-		if(boolLT == true && boolRB == true)
-		{
-			RTtoRB.gameObject.SetActive (false);
-			RTtoLB.gameObject.SetActive (false);
-			RTtoLT.gameObject.SetActive (false);
-			LBtoLT.gameObject.SetActive (false);
-			LBtoRB.gameObject.SetActive (false);
-			LBtoRT.gameObject.SetActive (false);
-			LTtoRB.gameObject.SetActive (true);
-			RBtoLT.gameObject.SetActive (false);
-
-			ori.gameObject.SetActive (false);
-
-			boolLT = false;
-			boolRB = false;
-		}
-
 	}
-
-//	void reset()
-//	{
-//		bool boolLT = false;
-//		bool boolRT = false;
-//		bool boolRB = false;
-//		bool boolLB = false;
-//	}
 
 	public void clickLT()
 	{
-		boolLT = true;
+		if (change == 0) {
+			change++;
+			a = 1;
+		} else {
+			b = 1;
+		}
 	}
 
 	public void clickRT()
 	{
-		boolRT = true;
-	}
-
-	public void clickRB()
-	{
-		boolRB = true;
+		if (change == 0) {
+			change++;
+			a = 2;
+		} else {
+			b = 2;
+		}
 	}
 
 	public void clickLB()
 	{
-		boolLB = true;
+		if (change == 0) {
+			change++;
+			a = 3;
+		} else {
+			b = 3;
+		}
 	}
 
+	public void clickRB()
+	{
+		if (change == 0) {
+			change++;
+			a = 4;
+		} else {
+			b = 4;
+		}
+	}
+
+
+	public void returnOri()
+	{
+		ori.gameObject.SetActive (true);
+		RTtoRB.gameObject.SetActive (false);
+		RTtoLB.gameObject.SetActive (false);
+		RTtoLT.gameObject.SetActive (false);
+		LBtoLT.gameObject.SetActive (false);
+		LBtoRB.gameObject.SetActive (false);
+		LBtoRT.gameObject.SetActive (false);
+		LTtoRB.gameObject.SetActive (false);
+		RBtoLT.gameObject.SetActive (false);
+
+		change = 0;
+		a = 0;
+		b = 0;
+	}
 }
