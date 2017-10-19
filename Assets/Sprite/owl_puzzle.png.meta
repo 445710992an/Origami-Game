@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 1190aa54fad3d7840a93d1e796765530
+timeCreated: 1446463989
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: owl_puzzle_0
+    21300002: owl_puzzle_1
+    21300004: owl_puzzle_2
+    21300006: owl_puzzle_4
+    21300008: owl_puzzle_3
+    21300010: owl_puzzle_5
+    21300012: owl_puzzle_7
+    21300014: owl_puzzle_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: owl_puzzle_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 437
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owl_puzzle_1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 437
+        width: 167
+        height: 172
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owl_puzzle_2
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 478
+        width: 136
+        height: 138
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owl_puzzle_4
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 291
+        width: 202
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owl_puzzle_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 291
+        width: 223
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owl_puzzle_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 165
+        width: 259
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owl_puzzle_7
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 72
+        width: 234
+        height: 147
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owl_puzzle_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 148
+        height: 154
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
