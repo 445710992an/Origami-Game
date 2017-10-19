@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 11f658ffd17484f1d9471bea982b9840
+timeCreated: 1508404868
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Vitamin outlined
+  fontNames:
+  - Vitamin outlined
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
