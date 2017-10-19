@@ -13,15 +13,17 @@ public class PrintePage : MonoBehaviour {
 	public GameObject Bp;
 	public GameObject Db;
 	public GameObject Dp;
+    public Text colourtext;
 
-	public void YbClick()
+    public void YbClick()
 	{
 		//Debug.Log ("Click");
 		Yp.gameObject.SetActive (true);
 		Bp.gameObject.SetActive (false);
 		Rp.gameObject.SetActive (false);
 		Dp.gameObject.SetActive (false);
-	}
+        colourtext.text = "y";
+}
 
 	public void BbClick()
 	{
@@ -30,7 +32,8 @@ public class PrintePage : MonoBehaviour {
 		Bp.gameObject.SetActive (true);
 		Rp.gameObject.SetActive (false);
 		Dp.gameObject.SetActive (false);
-	}
+        colourtext.text = "b";
+    }
 
 	public void RbClick()
 	{
@@ -39,7 +42,8 @@ public class PrintePage : MonoBehaviour {
 		Bp.gameObject.SetActive (false);
 		Rp.gameObject.SetActive (true);
 		Dp.gameObject.SetActive (false);
-	}
+        colourtext.text = "r";
+    }
 
 	public void DbClick()
 	{
@@ -48,6 +52,7 @@ public class PrintePage : MonoBehaviour {
 		Bp.gameObject.SetActive (false);
 		Rp.gameObject.SetActive (false);
 		Dp.gameObject.SetActive (true);
-	}
+        colourtext.text = "d";
+    }
 
 }
