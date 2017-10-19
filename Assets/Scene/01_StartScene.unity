@@ -4309,6 +4309,16 @@ Prefab:
       propertyPath: setting
       value: 
       objectReference: {fileID: 1124763708}
+    - target: {fileID: 114991229850726648, guid: 9c317e96697a548139f6b99191975a75,
+        type: 2}
+      propertyPath: splashScreenTime
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114991229850726648, guid: 9c317e96697a548139f6b99191975a75,
+        type: 2}
+      propertyPath: showSplashScreen
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c317e96697a548139f6b99191975a75, type: 2}
   m_IsPrefabParent: 0

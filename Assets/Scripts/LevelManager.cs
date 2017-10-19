@@ -23,18 +23,21 @@ public class LevelManager : MonoBehaviour
 
 	[Header("Splash Screen Display Config")]
 	public bool showSplashScreen = true;
-	public float splashScreenTime = 3f;
+	public float splashScreenTime;
 	//public bool showGameSpace = false;
 
 
-	private Animator menuAnimator;
+	private Animator menuAnimator;	
 
 	void Start()
 	{
 		if(firstStart && showSplashScreen)
 		{
-			firstStart = false;
+			//firstStart = false;
+			Debug.Log("in");
 			SplashScreen.SetActive(true);
+			GameSapce.SetActive (false);
+			setting.SetActive(false);
 			StartCoroutine(CRHideSplashScreen(splashScreenTime));
 		}
 		else
@@ -61,13 +64,7 @@ public class LevelManager : MonoBehaviour
 		//SplashScreen.SetActive(false);
 		setting.SetActive(true);
 		GameSapce.SetActive (true);
-
-		/*
-		if (!SoundManager.Instance.IsMusicOff() && SoundManager.Instance.MusicState != SoundManager.PlayingState.Playing)
-		{
-			SoundManager.Instance.PlayMusic(SoundManager.Instance.background);
-		}
-		*/
+		Debug.Log ("out");
 	}
 
 
