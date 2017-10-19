@@ -8,6 +8,7 @@ public class dropcolour : MonoBehaviour, IDropHandler
 {
     public Text colourtext;
     public Color loadToColor = Color.white;
+
     void start()
     {
         //wintext.text = "";

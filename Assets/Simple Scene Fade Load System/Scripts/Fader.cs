@@ -46,9 +46,11 @@ public class Fader : MonoBehaviour {
 			alpha = Mathf.Lerp (alpha, -0.1f, fadeDamp * Time.deltaTime);
 		else
 			alpha = Mathf.Lerp (alpha, 1.1f, fadeDamp * Time.deltaTime);
+		
         //Load scene
 		if (alpha >= 1 && !isFadeIn) {
             SceneManager.LoadScene(fadeScene);
+			//SceneManager.LoadScene(fadeSceneint);
             DontDestroyOnLoad(gameObject);		
 		} else
 		if (alpha <= 0 && isFadeIn) {

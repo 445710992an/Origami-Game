@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour 
 {
-	// Use this for initialization
+	public int SceneNumber;
+
 	void Start () 
 	{
 		GameObject btnObj = GameObject.Find ("Button");
@@ -25,8 +26,12 @@ public class NextScene : MonoBehaviour
 	{
 		int i = SceneManager.GetActiveScene().buildIndex;
 
-		SceneManager.LoadScene (i + 1);
+		SceneManager.LoadScene (SceneNumber);
 	}
 
-	// Update is called once per frame
+	public void Level1GoNext()
+	{
+
+	}
+
 }

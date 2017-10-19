@@ -13,4 +13,16 @@ public static class Initiate {
 		scr.fadeColor = col;
 		scr.start = true;
 	}
+
+	public static void FadeInt (int scene,Color col,float damp){
+		GameObject init = new GameObject ();
+		init.name = "FaderInt";
+		init.AddComponent<FaderInt> ();
+		FaderInt scr = init.GetComponent<FaderInt> ();
+		scr.fadeDamp = damp;
+		scr.fadeScene = scene;
+		scr.fadeColor = col;
+		scr.start = true;
+	}
+
 }
