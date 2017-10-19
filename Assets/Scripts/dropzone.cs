@@ -12,5 +12,6 @@ public class dropzone : MonoBehaviour, IDropHandler {
     public void OnDrop(PointerEventData eventData) {
         //Debug.Log("drop to area");
         wintext.text = "You win!";
+
     }
 }

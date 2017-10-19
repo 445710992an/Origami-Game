@@ -15,8 +15,12 @@ public class Saver : MonoBehaviour {
 		score = scoreAmount;//stores the score
 		CheckCurrentLevel ();//call next function
 	}
+    public void SetScoredontback(int scoreAmount)
+    {
+        score = scoreAmount;//stores the score
+    }
 
-	void CheckCurrentLevel()
+    void CheckCurrentLevel()
 	{
 		//this function checks in which level we are depending on the name
 		for (int i = 1; i <= LevelAmount; i++)
@@ -47,7 +51,7 @@ public class Saver : MonoBehaviour {
 				PlayerPrefs.SetInt ("Level" + CurrentLevel.ToString () + "_score", score);//if so, save
 			}
 		}
-		BackToLevelSelect ();//call next function
+		//BackToLevelSelect ();//call next function
 	}
 
 	void BackToLevelSelect()
