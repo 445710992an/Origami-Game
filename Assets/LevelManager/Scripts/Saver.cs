@@ -15,10 +15,6 @@ public class Saver : MonoBehaviour {
 		score = scoreAmount;//stores the score
 		CheckCurrentLevel ();//call next function
 	}
-    public void SetScoredontback(int scoreAmount)
-    {
-        score = scoreAmount;//stores the score
-    }
 
     void CheckCurrentLevel()
 	{
