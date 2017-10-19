@@ -8,19 +8,29 @@ public class dropcolour : MonoBehaviour, IDropHandler
 {
     public Text colourtext;
     public Color loadToColor = Color.white;
+    float timestarted;
+    float timetaken;
+ //   bool recorded;
 
     void start()
     {
         //wintext.text = "";
+      //  timestarted = Time.time;
+    }
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && timestarted == 0)
+            timestarted = Time.time;
+        timetaken = Time.time - timestarted;
     }
     public void OnDrop(PointerEventData eventData)
     {
         //Debug.Log("drop to area");
         //wintext.text = "You win!";
         if (colourtext.text == "b"){
-        //    Debug.Log("drop to area");
             Saver saver1 = new Saver();
-            saver1.SetScore(50000);
+            saver1.SetScorebytime(timetaken);
+            timestarted = 0;
             Initiate.Fade("cloud and fire next", loadToColor, 2.0f);
         }
     }

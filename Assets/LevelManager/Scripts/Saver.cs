@@ -10,6 +10,16 @@ public class Saver : MonoBehaviour {
 	private int CurrentLevel;
     public Color loadToColor = Color.white;
 
+    public void SetScorebytime(float time) {
+        Debug.Log(time);
+        if (time < 10) { score = 20000; }
+        else if (time < 15) { score = 10000; }
+        else if (time < 20) { score = 5000; }
+        else { score = 0; }
+        SetScore(score);
+
+    }
+
     public void SetScore(int scoreAmount)
 	{
 		score = scoreAmount;//stores the score
