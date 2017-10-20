@@ -250,6 +250,7 @@ public class ControlPage : MonoBehaviour {
 	public void clickLT()
 	{
 		if (change == 0) {
+			Debug.Log ("1");
 			change++;
 			a = 1;
 		} else {

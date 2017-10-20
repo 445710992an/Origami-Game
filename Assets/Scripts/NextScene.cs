@@ -29,9 +29,4 @@ public class NextScene : MonoBehaviour
 		SceneManager.LoadScene (SceneNumber);
 	}
 
-	public void Level1GoNext()
-	{
-
-	}
-
 }
