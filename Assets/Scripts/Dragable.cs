@@ -2,23 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+//created by xuefei
+//simple drag handler for objects
 public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
     public void OnBeginDrag(PointerEventData eventdata)
     {
-        // Debug.Log("on begin drag");
-        GetComponent<CanvasGroup>().blocksRaycasts = false;
+        GetComponent<CanvasGroup>().blocksRaycasts = false;//allow collsion when beginning a drag
     }
     public void OnDrag(PointerEventData eventdata)
     {
-       // Debug.Log("on drag");
-        this.transform.position = eventdata.position;
+        this.transform.position = eventdata.position; //reposition the drag object to the mouse position
     }
     public void OnEndDrag(PointerEventData eventdata)
     {
-        // Debug.Log("end drag");
-        GetComponent<CanvasGroup>().blocksRaycasts = true;
+        GetComponent<CanvasGroup>().blocksRaycasts = true;//disallow collsion right after a drag action
     }
 }
