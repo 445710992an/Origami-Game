@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//created by xie,modified version to navigate to another scence base on number given
 public class BackScene : MonoBehaviour {
 
 	public Color loadToColor = Color.white;

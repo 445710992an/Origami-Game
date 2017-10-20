@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+//adapt by xie and original is https://www.assetstore.unity3d.com/cn/#!/content/83537
 namespace SgLib
 {
     [RequireComponent(typeof(AudioSource))]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using SgLib;
-
+//create by xie use for controlling main menu,settings and animations
 public class LevelManager : MonoBehaviour 
 {
 

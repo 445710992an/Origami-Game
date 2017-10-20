@@ -4,7 +4,7 @@ using System;
 using System.IO;
 using UnityEngine.SceneManagement;
 using System.Text.RegularExpressions;
-
+//adapt by xie and original is https://www.assetstore.unity3d.com/cn/#!/content/83537
 namespace SgLib
 {
     /// <summary>

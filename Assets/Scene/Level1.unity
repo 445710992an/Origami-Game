@@ -299,12 +299,12 @@ Prefab:
     - target: {fileID: 224777836064341332, guid: e2230c27ecf1248f78fa105dfea2f7dc,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 957
+      value: 940
       objectReference: {fileID: 0}
     - target: {fileID: 224777836064341332, guid: e2230c27ecf1248f78fa105dfea2f7dc,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -48
+      value: -59.3
       objectReference: {fileID: 0}
     - target: {fileID: 224777836064341332, guid: e2230c27ecf1248f78fa105dfea2f7dc,
         type: 2}
@@ -396,9 +396,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 46558254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad756231792df4986a9d9429f63358a7, type: 3}
+  m_Script: {fileID: 11500000, guid: cfab85c0573ef4e7bb92a7fb3caef703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadToColor: {r: 1, g: 1, b: 1, a: 1}
+  SceneNumber: 9
 --- !u!1 &61992462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3189,12 +3191,12 @@ Prefab:
     - target: {fileID: 224620090645047838, guid: abb324c38c03b46b69f6b0bd6fcdb512,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 64
+      value: 111
       objectReference: {fileID: 0}
     - target: {fileID: 224620090645047838, guid: abb324c38c03b46b69f6b0bd6fcdb512,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -48
+      value: -77.733
       objectReference: {fileID: 0}
     - target: {fileID: 224620090645047838, guid: abb324c38c03b46b69f6b0bd6fcdb512,
         type: 2}
@@ -3229,12 +3231,12 @@ Prefab:
     - target: {fileID: 224620090645047838, guid: abb324c38c03b46b69f6b0bd6fcdb512,
         type: 2}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224620090645047838, guid: abb324c38c03b46b69f6b0bd6fcdb512,
         type: 2}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0.25422448
       objectReference: {fileID: 0}
     - target: {fileID: 114631537167750300, guid: abb324c38c03b46b69f6b0bd6fcdb512,
         type: 2}
@@ -3419,7 +3421,7 @@ GameObject:
   - component: {fileID: 1339419014}
   - component: {fileID: 1339419015}
   m_Layer: 5
-  m_Name: DragbleZoom
+  m_Name: dropzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3455,9 +3457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8e7af2cac53d404f9256789797bccd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wintext: {fileID: 0}
   loadToColor: {r: 1, g: 1, b: 1, a: 1}
-  SceneNumber: 7
+  Scenename: Level_1_next
 --- !u!1 &1413821114
 GameObject:
   m_ObjectHideFlags: 0
@@ -5874,7 +5875,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cba9fbbe746714d3485259c7263441ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coldTime: 2
 --- !u!114 &2125733812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6062,6 +6062,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2140825766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad756231792df4986a9d9429f63358a7, type: 3}
+  m_Script: {fileID: 11500000, guid: cfab85c0573ef4e7bb92a7fb3caef703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadToColor: {r: 1, g: 1, b: 1, a: 1}
+  SceneNumber: 0

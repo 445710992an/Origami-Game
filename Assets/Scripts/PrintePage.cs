@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//made by xie, use for switching active image object when player click on respective colour
 public class PrintePage : MonoBehaviour {
 
 	public GameObject Yb;
@@ -13,7 +13,7 @@ public class PrintePage : MonoBehaviour {
 	public GameObject Bp;
 	public GameObject Db;
 	public GameObject Dp;
-    public Text colourtext;
+    public Text colourtext;//record the current state of colour.
 
     public void YbClick()
 	{

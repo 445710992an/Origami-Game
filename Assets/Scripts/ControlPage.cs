@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//written by xie
 public class ControlPage : MonoBehaviour {
-
+    //L-left R-right T-top B-bottom
 	public GameObject LT;
 	public GameObject RT;
 	public GameObject LB;
@@ -20,8 +20,8 @@ public class ControlPage : MonoBehaviour {
 	public GameObject LTtoRB;
 	public GameObject RBtoLT;
 
-	public GameObject ori;
-
+	public GameObject ori;//default image, reactive when reset
+    //show correct image and hide all other images 
 
 	int change = 0;
 	int a = 0;
@@ -38,7 +38,7 @@ public class ControlPage : MonoBehaviour {
 		LBtoRT.gameObject.SetActive (false);
 		LTtoRB.gameObject.SetActive (false);
 		RBtoLT.gameObject.SetActive (false);
-
+        //initialize to default
 	}
 
 	void Update()
@@ -47,7 +47,8 @@ public class ControlPage : MonoBehaviour {
 		if (change > 0) {
 
 			int num = a * 10 + b;
-
+           // a is the first pressed button, b is the second, this will give a number format of "a"+"b", so for example if a = 1, 
+           // b=2 then num=12, which means"first vertice" to second vertices, in this case left bottom to right bottom
 			switch (num) {
 			case 12:
 				ori.gameObject.SetActive (false);
@@ -240,7 +241,7 @@ public class ControlPage : MonoBehaviour {
 				a = 0;
 				b = 0;
 				break;
-
+                    //all possible combinations and change image accordingly
 			default:
 				break;
 			}
@@ -286,7 +287,7 @@ public class ControlPage : MonoBehaviour {
 		} else {
 			b = 4;
 		}
-	}
+	}//assignment of a and b according to position clicked
 
 
 	public void returnOri()
@@ -304,5 +305,6 @@ public class ControlPage : MonoBehaviour {
 		change = 0;
 		a = 0;
 		b = 0;
+        //back to default shape
 	}
 }

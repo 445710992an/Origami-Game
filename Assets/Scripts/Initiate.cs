@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-
+//script author by FlatTutorial https://www.assetstore.unity3d.com/en/#!/content/81753
 public static class Initiate {
     //Create Fader object and assing the fade scripts and assign all the variables
     public static void Fade (string scene,Color col,float damp){
