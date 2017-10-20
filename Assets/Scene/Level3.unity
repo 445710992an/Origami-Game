@@ -540,7 +540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &125530778
 GameObject:
@@ -583,7 +583,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170232346
 GameObject:
@@ -825,7 +825,7 @@ Prefab:
     - target: {fileID: 224620090645047838, guid: abb324c38c03b46b69f6b0bd6fcdb512,
         type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224620090645047838, guid: abb324c38c03b46b69f6b0bd6fcdb512,
         type: 2}
@@ -985,7 +985,7 @@ GameObject:
   - component: {fileID: 271934488}
   - component: {fileID: 271934489}
   m_Layer: 5
-  m_Name: DragbleZoom
+  m_Name: dropzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 271934487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2696cdbb7fba7d44892944c65dcbaa33, type: 3}
+  m_Script: {fileID: 11500000, guid: b87f5732e06554dc49f01795924c0ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colourtext: {fileID: 1018295649}
@@ -1143,7 +1143,7 @@ Prefab:
     - target: {fileID: 224777836064341332, guid: e2230c27ecf1248f78fa105dfea2f7dc,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224777836064341332, guid: e2230c27ecf1248f78fa105dfea2f7dc,
         type: 2}
@@ -1573,7 +1573,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level X
+  m_Text: Level 3
 --- !u!222 &412588178
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3344,7 +3344,7 @@ RectTransform:
   - {fileID: 1862311572}
   - {fileID: 1897342229}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6097,8 +6097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad756231792df4986a9d9429f63358a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadToColor: {r: 1, g: 1, b: 1, a: 1}
-  SceneNumber: 1
 --- !u!1 &1703951639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6490,7 +6488,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6597,8 +6595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad756231792df4986a9d9429f63358a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadToColor: {r: 1, g: 1, b: 1, a: 1}
-  SceneNumber: 0
 --- !u!1 &2008055066
 GameObject:
   m_ObjectHideFlags: 0
@@ -6796,5 +6792,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

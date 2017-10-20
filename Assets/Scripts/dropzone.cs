@@ -8,7 +8,7 @@ public class dropzone : MonoBehaviour, IDropHandler {
     
 	//public Text wintext;
 	public Color loadToColor = Color.white;
-	public int SceneNumber;
+	public string Scenename;
     float timestarted;
     float timetaken;
     void start (){
@@ -28,7 +28,7 @@ public class dropzone : MonoBehaviour, IDropHandler {
 		Saver saver1 = new Saver();
         saver1.SetScorebytime(timetaken);
         timestarted = 0;
-        Initiate.FadeInt(SceneNumber, loadToColor, 2.0f);
+        Initiate.Fade(Scenename, loadToColor, 2.0f);
 
     }
 }
