@@ -31,7 +31,7 @@ public class dropcolour : MonoBehaviour, IDropHandler
             Saver saver1 = new Saver();
             saver1.SetScorebytime(timetaken);
             timestarted = 0;
-            Initiate.Fade("cloud and fire next", loadToColor, 2.0f);
+            Initiate.Fade("Level_3_next", loadToColor, 2.0f);
         }
     }
 }
