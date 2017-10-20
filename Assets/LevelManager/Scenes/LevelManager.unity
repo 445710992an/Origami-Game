@@ -330,6 +330,9 @@ MonoBehaviour:
   - LevelText: 3
     UnLocked: 0
     IsInteractable: 0
+  - LevelText: 4
+    UnLocked: 0
+    IsInteractable: 1
   loadToColor: {r: 0.5058824, g: 0.5058824, b: 0.5058824, a: 1}
   Star0Points: 0
   Star1Points: 5000
@@ -956,8 +959,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.4, y: 11.3}
-  m_SizeDelta: {x: -26.9, y: -44.6}
+  m_AnchoredPosition: {x: -1.4, y: 57.5}
+  m_SizeDelta: {x: -26.9, y: -226.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000239028
 MonoBehaviour:
