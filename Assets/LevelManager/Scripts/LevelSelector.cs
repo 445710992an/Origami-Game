@@ -4,35 +4,33 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-
+//adapt and modified by xuefei, original auther: xOctoManx (an online tutorial)
+//link:https://www.youtube.com/watch?v=xSDfSDTtUMs
+//use for select and navigate levels, and display star grading of each level based on high score
 public class LevelSelector: MonoBehaviour {
 
-	//Drag this on a Empty GameObject
-	//Popoluate it with the Spacer GameObject and the Button
-	//set The amount of Levels
-	//set the 1st one to be unlocked and interactable
-	//give all levels a name of the number of the level(1, 2, 3, 4 ... and so on)
 	[System.Serializable]
-	public class Level
+    //allow we embed a class with sub properties in the inspector.
+    public class Level
 	{
-		public string LevelText;
-		public int UnLocked;
+		public string LevelText;//used for tracking level number
+		public int UnLocked;//0 for locked, 1 for unlocked
 		public bool IsInteractable;
 	}
-	public GameObject levelButton;//the button prefab needs to be dragged in
-	public Transform Spacer;//create a gameobject in the canvas and drag it into
+	public GameObject levelButton;//hold the preset perfab
+	public Transform Spacer;//hold the content of level selector
 	public List<Level> LevelList;
     public Color loadToColor = Color.white;
-    //Score - all level use the same score, so don't give to much score in higher levels
+    //Score - all level use the same score
     //Can also be changed in the levelManager GameObject
-    public int Star0Points = 0;
+    public int Star0Points = 0;// the score the player need to beat the level, but no star awardedd
     public int Star1Points = 5000;//the score the player needs to unlock the first star
 	public int Star2Points = 10000;//the score the player needs to unlock the second star
 	public int Star3Points = 20000;//the score the player needs to unlock the third star
 
 	void Start () 
 	{
-		FillList ();
+		FillList ();//populate the levellist
 	}
 
 	void FillList()
@@ -43,6 +41,7 @@ public class LevelSelector: MonoBehaviour {
 			LevelButton button = newbutton.GetComponent<LevelButton>();//get the levebutton component of the created button
 			button.LevelText.text = level.LevelText;//set the leveltext set in the levelmanager onto the button
 			//if the current looped button has a saved value of 1 (is unlocked), then set it to be unlocked and interactable
+            //as this will be the first level which should be made unconditionally unlocked
 			if(PlayerPrefs.GetInt("Level" + button.LevelText.text) == 1)
 			{
 				level.UnLocked = 1;
@@ -54,28 +53,32 @@ public class LevelSelector: MonoBehaviour {
 			button.GetComponent<Button>().interactable = level.IsInteractable;
 			//add a listener with a function on it to load the right level when the button is clicked
 			button.GetComponent<Button>().onClick.AddListener(() => loadLevels("Level" + button.LevelText.text));
-            //check stars depending on score
+            //check stars depending on score, noted point required for each star get progressive higher
             if (PlayerPrefs.GetInt("Level" + button.LevelText.text + "_score") > Star0Points) {
                 button.Star1grey.SetActive(true);
                 button.Star2grey.SetActive(true);
                 button.Star3grey.SetActive(true);
+                //3 grey star for 0 star but have completed the level
             }
             if (PlayerPrefs.GetInt("Level"+ button.LevelText.text + "_score") >= Star1Points)
 			{
 				button.Star1.SetActive(true);
                 button.Star1grey.SetActive(false);
+                //1st star unlocked
             }
 
 			if(PlayerPrefs.GetInt("Level"+ button.LevelText.text + "_score") >= Star2Points)
 			{
 				button.Star2.SetActive(true);
                 button.Star2grey.SetActive(false);
+                //second star unlocked
             }
 
 			if(PlayerPrefs.GetInt("Level"+ button.LevelText.text + "_score") >= Star3Points)
 			{
 				button.Star3.SetActive(true);
                 button.Star3grey.SetActive(false);
+                //third star unlocked
             }
 			//set the parent to be the spacer which needs to be in the canvas
 			newbutton.transform.SetParent(Spacer,false);
@@ -101,7 +104,7 @@ public class LevelSelector: MonoBehaviour {
 			}
 		}
 	}
-	//if you want to delete all saved values use this
+	//a test function to reset the player scores and unlock progress
 	public void DeleteAll()
 	{
 		PlayerPrefs.DeleteAll ();
@@ -109,10 +112,10 @@ public class LevelSelector: MonoBehaviour {
         Initiate.Fade("LevelManager", loadToColor, 2.0f);
 
     }
-	//thats the function to load the right level once clicked on a level button
+	//function to load the right level once clicked on a level button
 	void loadLevels(string value)
 	{
-		//Application.LoadLevel (value);
+		//with value being the required level, and fader to fade out
 	//	SceneManager.LoadScene(value);
         Initiate.Fade(value, loadToColor, 2.0f);
     }

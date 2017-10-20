@@ -1,29 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+//adapt and modified by xuefei, original auther: xOctoManx (an online tutorial)
+//link:https://www.youtube.com/watch?v=xSDfSDTtUMs
+//use for saving the high score,star grading and unlock progress of the players
 public class Saver : MonoBehaviour {
 	
 	public int score;
 	public string LevelManagerName = "LevelManager";
-	private int LevelAmount = 3;//change this to the amount of level you have in your levelmanager - at least 1
+	private int LevelAmount = 3;//semi-dynamically change the total level amount by variable
 	private int CurrentLevel;
-    public Color loadToColor = Color.white;
+    public Color loadToColor = Color.white; // integrete with fader to create fade in effect while loading
 
     public void SetScorebytime(float time) {
-        Debug.Log(time);
-        if (time < 10) { score = 20000; }
+        //provide an alternative score recording by time
+        //covert time taken to score
+        //which is used later for star gradjing
+        if (time < 10) { score = 20000; }//3stars for less than 10s, 2 for less than 15, 1 star for 15~20s no star for over 20s
         else if (time < 15) { score = 10000; }
         else if (time < 20) { score = 5000; }
         else { score = 0; }
-        SetScore(score);
-
+        SetScore(score);//call the setscore function
     }
 
     public void SetScore(int scoreAmount)
 	{
+        //if the level directly allocated score to player, this will be called
 		score = scoreAmount;//stores the score
-		CheckCurrentLevel ();//call next function
+		CheckCurrentLevel ();//call next step of saving function
 	}
 
     void CheckCurrentLevel()
@@ -41,7 +45,7 @@ public class Saver : MonoBehaviour {
 
 	void SaveMyGame()
 	{
-		//save all needed data
+		//when this fuction is called all needed data will be save in disk(in windows system this will be saved in registry)
 		int NextLevel = CurrentLevel + 1;// this is needed to unlock the next level
 		if (NextLevel < LevelAmount+1) {//to prevent overflow
 			PlayerPrefs.SetInt ("Level" + NextLevel.ToString (), 1);//unlock next level
@@ -57,13 +61,12 @@ public class Saver : MonoBehaviour {
 				PlayerPrefs.SetInt ("Level" + CurrentLevel.ToString () + "_score", score);//if so, save
 			}
 		}
-		//BackToLevelSelect ();//call next function
+		//BackToLevelSelect ();//go back to the level selector after every save game,unused in later development
 	}
 
 	void BackToLevelSelect()
 	{
-        //go back to the Level Select Menu
-        //SceneManager.LoadScene(LevelManagerName);//unity 5.3+
+        //go back to the Level Select Menu with fader
         Initiate.Fade("LevelManager", loadToColor, 2.0f);
     }
 }

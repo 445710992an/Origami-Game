@@ -3,8 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class LevelButton : MonoBehaviour {
-	//This needs to be on the Button Prefab
-	//Don't forget to populate it with the LevelText and the Stars
+	//created a class referance to attach script to manipulate relavent objects
+    //also needed to popuplate the selection menu
 	public Text LevelText;
 	public int unlocked;
 	public GameObject Star1;
