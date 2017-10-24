@@ -32,7 +32,7 @@ public class dropzone : MonoBehaviour, IDropHandler {
 
 	IEnumerator sceneLoader(string scenename)
 	{
-		yield return new WaitForSeconds(5);//resume after exactly 2 seconds
+		yield return new WaitForSeconds(5);//resume after exactly 5 seconds
 		Initiate.Fade(scenename, loadToColor, 2.0f);// load level manager scene
 	}
 

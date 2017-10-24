@@ -113,6 +113,7 @@ public class PuzzleController : MonoBehaviour
 
 	///<summary>
 	/// Add scores and update textmesh
+    /// however this module is not used in the adaptation
 	///</summary>
 	public void AddScore()
 	{
@@ -123,7 +124,7 @@ public class PuzzleController : MonoBehaviour
 	}
 
 	///<summary>
-	/// Handle game time
+	/// record game time
 	///</summary>
 	void HandleTime()
 	{
