@@ -31,10 +31,10 @@ namespace SgLib
         // List of sounds used in this game
         public Sound background;
         public Sound button;
-        public Sound win;
-        public Sound ping;
+//        public Sound win;
+//        public Sound ping;
         public Sound gameOver;
-        public Sound tick;
+//        public Sound tick;
 
         public enum PlayingState
         {
@@ -141,7 +141,7 @@ namespace SgLib
             }
                 
             AudioSource.clip = music.clip;
-            AudioSource.loop = loop;
+//            AudioSource.loop = loop;
             AudioSource.Play();
             _musicState = PlayingState.Playing;
         }

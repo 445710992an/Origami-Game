@@ -90,4 +90,10 @@ public class SoundControl : MonoBehaviour {
 			btnMusicOn.gameObject.SetActive(true);
 		}
 	}
+
+	void UpdateBackGourpMusic()
+	{
+
+	}
+
 }

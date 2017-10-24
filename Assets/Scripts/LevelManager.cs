@@ -17,7 +17,6 @@ public class LevelManager : MonoBehaviour
 	public Button btnSoundOff;
 	public Button btnMusicOn;
 	public Button btnMusicOff;
-	public Button btnSwitch;
 	public GameObject menuUI;
 	public AnimationClip showMenuPanel;
 	public AnimationClip hideMenuPanel;

@@ -84,6 +84,11 @@ namespace SgLib
             SoundManager.Instance.PlaySound(SoundManager.Instance.button);
         }
 
+		public void PlayErrorSound()
+		{
+			SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
+		}
+
         // Opens a specific scene
         public void GoToScene(string sceneName)
         {
@@ -94,58 +99,7 @@ namespace SgLib
         {
             SoundManager.Instance.ToggleMute();
         }
-
-		/*
-        public void RateApp()
-        {
-            switch (Application.platform)
-            {
-                case RuntimePlatform.IPhonePlayer:
-                    Application.OpenURL(AppInfo.Instance.APPSTORE_LINK);
-                    break;
-        			
-                case RuntimePlatform.Android:
-                    Application.OpenURL(AppInfo.Instance.PLAYSTORE_LINK);
-                    break;
-            }
-        }
-		*/
-
-		/*
-        public void ShowMoreGames()
-        {
-            switch (Application.platform)
-            {
-                case RuntimePlatform.IPhonePlayer:
-                    Application.OpenURL(AppInfo.Instance.APPSTORE_HOMEPAGE);
-                    break;
-    			
-                case RuntimePlatform.Android:
-                    Application.OpenURL(AppInfo.Instance.PLAYSTORE_HOMEPAGE);
-                    break;
-            }
-        }
-		*/
-
-		/*
-        public void OpenFacebookPage()
-        {
-            Application.OpenURL(AppInfo.Instance.FACEBOOK_LINK);
-        }
-
-        public void OpenTwitterPage()
-        {
-            Application.OpenURL(AppInfo.Instance.TWITTER_LINK);
-        }
-
-        public void ContactUs()
-        {
-            string email = AppInfo.Instance.SUPPORT_EMAIL;
-            string subject = EscapeURL(AppInfo.Instance.APP_NAME + " [" + Application.version + "] Support");
-            string body = EscapeURL("");
-            Application.OpenURL("mailto:" + email + "?subject=" + subject + "&body=" + body);
-        }
-		*/
+			
 
         public string EscapeURL(string url)
         {
