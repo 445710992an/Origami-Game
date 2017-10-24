@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using SgLib;
+
 //create by xie use for controlling main menu,settings and animations
-public class LevelManager : MonoBehaviour 
+public class LevelManager : MonoBehaviour
 {
 
 	private static bool firstStart = true;
@@ -24,17 +25,14 @@ public class LevelManager : MonoBehaviour
 	[Header("Splash Screen Display Config")]
 	public bool showSplashScreen = true;
 	public float splashScreenTime;
-	//public bool showGameSpace = false;
 
 
-	private Animator menuAnimator;	
+	private Animator menuAnimator;
 
 	void Start()
 	{
 		if(firstStart && showSplashScreen)
 		{
-			//firstStart = false;
-			Debug.Log("in");
 			SplashScreen.SetActive(true);
 			GameSapce.SetActive (false);
 			setting.SetActive(false);
@@ -61,10 +59,9 @@ public class LevelManager : MonoBehaviour
 	{
 		SoundManager.Instance.PlayMusic(SoundManager.Instance.background);
 		yield return new WaitForSeconds(delay);
-		//SplashScreen.SetActive(false);
 		setting.SetActive(true);
 		GameSapce.SetActive (true);
-		Debug.Log ("out");
+
 	}
 
 
@@ -128,7 +125,7 @@ public class LevelManager : MonoBehaviour
 			btnMusicOn.gameObject.SetActive(true);
 		}
 	}
-		
+
 
 
 }

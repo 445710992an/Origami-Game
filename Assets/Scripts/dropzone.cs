@@ -10,6 +10,9 @@ public class dropzone : MonoBehaviour, IDropHandler {
 	public string Scenename;
     float timestarted;//unity use float to keep track of current time
     float timetaken;
+	public GameObject store;
+	public string scenename;
+
     void start (){
     }
     void Update()
@@ -23,6 +26,16 @@ public class dropzone : MonoBehaviour, IDropHandler {
 		Saver saver1 = new Saver();//create a saver class for saving 
         saver1.SetScorebytime(timetaken);
         timestarted = 0;//reset start time to zero
-        Initiate.Fade(Scenename, loadToColor, 2.0f);
+		store.gameObject.SetActive (true);
+		StartCoroutine(sceneLoader(scenename));// pause execution and return control to Unity
+
     }
+
+	IEnumerator sceneLoader(string scenestring)
+	{
+		yield return new WaitForSeconds(5);//resume after exactly 2 seconds
+		Initiate.Fade(scenestring, loadToColor, 2.0f);// load level manager scene
+	}
+
+
 }

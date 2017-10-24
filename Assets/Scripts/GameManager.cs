@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 
 	public void OnStartGame(int SceneIndex)
 	{
-		Application.LoadLevel (SceneIndex);
+		Application.LoadLevel(SceneIndex);
 	}
 
 }

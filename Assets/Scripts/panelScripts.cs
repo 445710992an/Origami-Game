@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//create by xie using this code to show or hide the Panel
 public class panelScripts : MonoBehaviour {
 
 	public GameObject Panel;

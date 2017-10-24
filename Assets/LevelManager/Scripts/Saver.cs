@@ -8,7 +8,7 @@ public class Saver : MonoBehaviour {
 	
 	public int score;
 	public string LevelManagerName = "LevelManager";
-	private int LevelAmount = 4;//semi-dynamically change the total level amount by variable
+	private int LevelAmount = 5;//semi-dynamically change the total level amount by variable
 	private int CurrentLevel;
     public Color loadToColor = Color.white; // integrete with fader to create fade in effect while loading
 

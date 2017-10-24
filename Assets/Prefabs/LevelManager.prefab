@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1420905758652502}
+  m_RootGameObject: {fileID: 1071391245281644}
   m_IsPrefabParent: 1
---- !u!1 &1420905758652502
+--- !u!1 &1071391245281644
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4453850182804844}
-  - component: {fileID: 114991229850726648}
+  - component: {fileID: 4456726166956740}
+  - component: {fileID: 114359652177827566}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -27,12 +27,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4453850182804844
+--- !u!4 &4456726166956740
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1420905758652502}
+  m_GameObject: {fileID: 1071391245281644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 466.44128, y: 369.17627, z: -10.5919485}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,12 +40,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114991229850726648
+--- !u!114 &114359652177827566
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1420905758652502}
+  m_GameObject: {fileID: 1071391245281644}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca787a3524f25460ca757cd3cc543ac0, type: 3}
@@ -53,6 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SplashScreen: {fileID: 0}
   GameSapce: {fileID: 0}
+  setting: {fileID: 0}
   btnSoundOn: {fileID: 0}
   btnSoundOff: {fileID: 0}
   btnMusicOn: {fileID: 0}
@@ -62,4 +63,4 @@ MonoBehaviour:
   showMenuPanel: {fileID: 7400000, guid: 63ff76247f71f0f46af3a761ff39c7b1, type: 2}
   hideMenuPanel: {fileID: 7400000, guid: 42dc2ea54b18a824bb53a88d9f81726b, type: 2}
   showSplashScreen: 1
-  splashScreenTime: 3
+  splashScreenTime: 2.8

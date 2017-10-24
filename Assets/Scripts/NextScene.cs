@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class NextScene : MonoBehaviour 
+//create by xie using this code to go the next scene
+public class NextScene : MonoBehaviour
 {
 	public int SceneNumber;
 
-	void Start () 
+	void Start ()
 	{
 		GameObject btnObj = GameObject.Find ("Button");
 		Button btn = btnObj.GetComponent<Button>();
@@ -17,7 +18,7 @@ public class NextScene : MonoBehaviour
 		});
 	}
 
-	void Update () 
+	void Update ()
 	{
 
 	}
