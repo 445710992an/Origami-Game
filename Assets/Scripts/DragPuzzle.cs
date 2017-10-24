@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+//adapted and integrated by xie, orignial author Assets4Devs on https://www.assetstore.unity3d.com/cn/#!/content/81480
 /// <summary>
 /// Player drags the puzzles pieces
 /// </summary>
@@ -62,7 +62,7 @@ public class DragPuzzle : MonoBehaviour
     void OnMouseDown()
     {
         canGo = false;
-        GetComponent<SpriteRenderer>().sortingOrder = 4;
+        GetComponent<SpriteRenderer>().sortingOrder = 4;//bring the sprite to the front
         startTime = true;
     }
 
@@ -139,7 +139,7 @@ public class DragPuzzle : MonoBehaviour
                 isNext = false;
             }
 
-            //if is next
+            //if is next antomatically transform and lock it to predifined postions
 			if (canGo && isNext && targetShadow.gameObject.activeSelf && isScaleOk && isRotationOk)
             {
 				transform.position = Vector2.MoveTowards(transform.position, targetShadow.position, smooth * Time.deltaTime);
@@ -155,6 +155,7 @@ public class DragPuzzle : MonoBehaviour
                 }
 
                 //if distance is smaller or equals 0, AddScore
+                //this is the related score calculation in original project, however it was not used in this project
 				if (distanceP <= 0)
                 {
                     if (puzzleController)

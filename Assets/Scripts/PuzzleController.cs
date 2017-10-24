@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+//adapted and integrated by xie, orignial author Assets4Devs on https://www.assetstore.unity3d.com/cn/#!/content/81480
 ///<summary>
 /// Gui of the game
 ///</summary>
@@ -95,8 +95,10 @@ public class PuzzleController : MonoBehaviour
             //Lion
             if (GameController.GameControllerProperties.CurrentGameState == GameState.PUZZLE)
             {
-//				ShowPlayerScoreLevel((countMinutes * 60) + countSeconds);
-				//Debug.Log ((countMinutes * 60) + countSeconds);
+                //				ShowPlayerScoreLevel((countMinutes * 60) + countSeconds);
+                //Debug.Log ((countMinutes * 60) + countSeconds);
+                Saver saver1 = new Saver();//create a saver class for saving 
+                saver1.SetScorebytime((countMinutes * 60) + countSeconds);
                 GameController.GameControllerProperties.CurrentGameState = GameState.GAME_OVER;
 				sceneLoader(scenename);
             }
@@ -111,6 +113,7 @@ public class PuzzleController : MonoBehaviour
 
 	///<summary>
 	/// Add scores and update textmesh
+    /// however this module is not used in the adaptation
 	///</summary>
 	public void AddScore()
 	{
@@ -121,7 +124,7 @@ public class PuzzleController : MonoBehaviour
 	}
 
 	///<summary>
-	/// Handle game time
+	/// record game time
 	///</summary>
 	void HandleTime()
 	{

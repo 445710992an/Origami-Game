@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 public class dropzone : MonoBehaviour, IDropHandler {
     
 	public Color loadToColor = Color.white;//when complete, load this scene
-	public string Scenename;
     float timestarted;//unity use float to keep track of current time
     float timetaken;
 	public GameObject store;
@@ -31,10 +30,10 @@ public class dropzone : MonoBehaviour, IDropHandler {
 
     }
 
-	IEnumerator sceneLoader(string scenestring)
+	IEnumerator sceneLoader(string scenename)
 	{
-		yield return new WaitForSeconds(5);//resume after exactly 2 seconds
-		Initiate.Fade(scenestring, loadToColor, 2.0f);// load level manager scene
+		yield return new WaitForSeconds(5);//resume after exactly 5 seconds
+		Initiate.Fade(scenename, loadToColor, 2.0f);// load level manager scene
 	}
 
 
