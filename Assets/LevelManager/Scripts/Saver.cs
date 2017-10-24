@@ -16,9 +16,9 @@ public class Saver : MonoBehaviour {
         //provide an alternative score recording by time
         //covert time taken to score
         //which is used later for star gradjing
-        if (time < 4) { score = 20000; }//3stars for less than 4s, 2 for less than 8s, 1 star for 12s no star for over 12s
-        else if (time < 8) { score = 10000; }
-        else if (time < 12) { score = 5000; }
+        if (time < 8) { score = 20000; }//3stars for less than 8s, 2 for less than 12s, 1 star for 16s no star for over 16s
+        else if (time < 12) { score = 10000; }
+        else if (time < 16) { score = 5000; }
         else { score = 0; }
         SetScore(score);//call the setscore function
     }
