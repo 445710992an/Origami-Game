@@ -23,7 +23,7 @@ public class dropcolour : MonoBehaviour, IDropHandler
             Saver saver1 = new Saver();//create a saver class for saving 
             saver1.SetScorebytime(timetaken);
             timestarted = 0;
-            Initiate.Fade("Level_3_next", loadToColor, 2.0f);//reset start time to zero
+            Initiate.Fade("LevelManager", loadToColor, 2.0f);//reset start time to zero
         }
     }
 }
